@@ -1,3 +1,4 @@
+// salvo 'saved-text' in una costante, in modo da riutilizzarla più volte senza errori di battitura
 const LOCALSTORAGE_KEY = 'saved-text'
 
 const saveFunction = function () {
@@ -40,7 +41,6 @@ const loadFunction = function () {
       toast.classList.remove('show')
     }, 3000)
   } else {
-    console.log('MANCA CONTENUTO')
     // accendo l'error toast
     const toast = document.getElementById('error-toast')
     // gli assegno la classe "show" -> comparirà
@@ -77,6 +77,6 @@ saveButton.addEventListener('click', saveFunction)
 const loadButton = document.getElementById('load') // riferimento al button con id "load"
 loadButton.addEventListener('click', loadFunction)
 
-// ricerco il pulsante CARICA dal DOM e gli assegno l'esecuzione di una funzione al click
-const resetButton = document.getElementById('reset') // riferimento al button con id "load"
+// ricerco il pulsante RESETTA dal DOM e gli assegno l'esecuzione di una funzione al click
+const resetButton = document.getElementById('reset') // riferimento al button con id "reset"
 resetButton.addEventListener('click', resetFunction)

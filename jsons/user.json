@@ -1,0 +1,13 @@
+{
+    "firstName": "Giangiorgio",
+    "lastName": "Ubaldi",
+    "age": 55,
+    "teacher": true,
+    "subjects": [
+        "FE",
+        "BE"
+    ],
+    "area": {
+        "region": "Sicily"
+    }
+}
